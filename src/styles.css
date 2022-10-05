@@ -9,6 +9,8 @@ body {
 body {
    
     overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: beige;
     font-family: Roboto, "Helvetica Neue", sans-serif;
    
 }

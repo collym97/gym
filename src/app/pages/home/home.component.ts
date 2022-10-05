@@ -12,6 +12,7 @@ import { ReporteService } from 'src/app/services/reporte.service';
 export class HomeComponent implements OnInit {
   model: Model[];
   search: any;
+  img = '/assets/deletee.ico'
 
 
   constructor( private  imprimir: ReporteService,private Baseservice: BaseService)

@@ -31,6 +31,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { BotonComponent } from './boton/boton.component';
 import { ReporteComponent } from './reporte/reporte.component';
 import { SplashComponent } from './splash/splash.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
  
 
@@ -48,6 +49,7 @@ import { SplashComponent } from './splash/splash.component';
     BotonComponent,
     ReporteComponent,
     SplashComponent,
+    NotfoundComponent,
     
   ],
   imports: [

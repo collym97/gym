@@ -1,92 +1,94 @@
-*{
-   
-       
-      
+
+
+/* Nuevo login */
+* {
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
-.container{
-    
+.card {
+    padding: 200px 60px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    /* border: none !important; */
+    box-shadow: 0 6px 12px 0 rgba(133, 56, 56, 0.925);
+}
 
-left: 10%;
-    top: 30%;
-    width: 320px;
-    height: 330px;
+.blue-text {
+    color: #ad0000
+}
+
+.form-control-label {
+    margin-bottom: 0
+}
+
+input,
+textarea,
+button {
+    padding: 8px 15px;
+    border-radius: 5px !important;
+    margin: 5px 2px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 18px !important;
+    font-weight: 300
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 5px solid #00BCD4;
+    outline-width: 0;
+    font-weight: 400
+}
+
+.btn-block {
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 400;
+    height: 43px;
+    cursor: pointer
+}
+
+
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+#btn {
+    position: relative;
+
+}
+
+.opt {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #b30000;
+    outline-width: 0;
+    font-weight: 400;
+    height: 35px;
+    font-size: medium;
+}
+
+img {
+    width: min-content;
+    width: 400px;
+    top: 80px;
+    right: 650px;
+    position: absolute;
+    border-radius: 90%;
     border-style: double;
-
-    position: absolute;
-    padding: 40px 30px;
-    box-shadow: 5px 6px #000000;
-    border-radius: 4%;
-background: #1D4350;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #A43931, #1D4350);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-    
+    border-color: aliceblue;
 }
+.alert {
+    color: red;
 
-mat-label{
-  margin: -2px;
-  padding: 5px;
-  font-size:small;
-  display: block;
-  color: rgb(255, 255, 255);
-        
-}
-
-
-
-
-#top{
-    border-radius: 10cm;
-    
-}
-#log {
-    font-size: larger;
-    color: aliceblue;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(106, 88, 32, 1) 100%, rgba(0, 212, 255, 1) 100%);
-    border-radius: 10cm;
-    text-align: center;
-
-}
-#log:hover {
-    font-size: larger;
-    color: rgb(255, 8, 0);
-    background: rgb(0, 0, 0);
-  
-    border-radius: 10cm;
-    text-align: center;
-
-}
-input{
-    border-style:groove;
-    border-color: brown;
-    border-radius: 5px;
-    width: 33ch
-}
-
-.alert{
-    color: rgb(255, 255, 255);
-    font-size: small;
-    position: absolute;
-    left: 17%;
-    top: 85%;
-}
-
-.btn1 {
-    bottom: 25%;
-    border-style: solid;
-    left: 34%;
-    position: absolute;
-}
-
-.btn2 {
-    bottom: 12%;
-    left: 37.2%;
-    position: absolute;
 
 }

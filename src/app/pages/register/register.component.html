@@ -1,23 +1,60 @@
-<div class="container">
+<div class="container-center">
 
-    <form [formGroup]="register" (ngSubmit)="Enviar(register.value) ">
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h2>Registrate para acceder </h2>
+                <div class="card">
 
-        <h2 id="log">Registrate para acceder</h2>
-        <mat-label>Gmail</mat-label>
-        <input type="email" formControlName="email" required maxlength="30">
-        <mat-label>Password</mat-label>
+                    <form [formGroup]="register " class=" form-card" (ngSubmit)="Enviar(register.value)">
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <img [src]='img' alt="">
+
+                            </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Correo electronico<span class="text-danger">
+                                        *</span></label>
+                                <input type="text" id="lname" formControlName="email" placeholder="Registra tu correo"
+                                    onblur="validate(2)" maxlength="30" minlength="3">
+                            </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex">
 
 
-        <input type="password" formControlName="password" required maxlength="30">
+                            </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label
+                                    class="form-control-label px-3">Password<span class="text-danger"> *</span></label>
+                                <input type="password" id="mob" formControlName="password" placeholder="Password"
+                                    onblur="validate(4)" maxlength="30" minlength="3">
+                            </div>
+                        </div>
 
 
 
-        <button class="btn1" mat-raised-button [disabled]="register.invalid" type="submit">Register</button>
-        <button class="btn2" mat-raised-button (click)="log()">Login</button>
-        <div *ngIf="register.touched ">
-            <h5 ngClass="alert">Debes completar los campos</h5>
 
+                        <div class="row justify-content-end">
+                            <div class="form-group col-sm-6">
+                                <button class="btn btn-dark" [disabled]="register.invalid" type="submit">
+                                    Registrarte</button>
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="form-group col-sm-6">
+                                <button class="btn btn-dark" (click)="log()">
+                                    Iniciar </button>
+                            </div>
+                        </div>
+
+                        <div class="ow justify-content-end">
+                            <div *ngIf="register.touched ">
+                                <h3 ngClass="alert">Completa los campos para iniciar</h3>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </form>
-
-</div>
+    </div>

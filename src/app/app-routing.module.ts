@@ -7,6 +7,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { CrudComponent } from './pages/crud/crud.component';
 import { ExitGuard } from './guards/exit.guard';
 import { SplashComponent } from './splash/splash.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 const routes: Routes = [
   {
@@ -39,7 +40,12 @@ const routes: Routes = [
     path: 'Registro',
      component: CrudComponent, ...canActivate(() => redirectUnauthorizedTo(['/register'])),
       canDeactivate:[ExitGuard]
-  }
+  },
+  {
+   path: "**",
+  component: NotfoundComponent  
+   }
+  
 
 ];
 
