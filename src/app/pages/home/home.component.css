@@ -1,0 +1,39 @@
+
+.container-center {
+
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:medium;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    align-items: stretch;
+    
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    background-color: bisque;
+    text-align: justify;
+    
+    
+    
+    
+}
+
+.title{
+    text-align: center;
+  
+
+}
+
+.thead-dark{
+    background-color: black;
+    color: aliceblue;
+    text-align: justify;
+    
+}
+
+

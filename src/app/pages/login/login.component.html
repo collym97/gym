@@ -1,0 +1,18 @@
+<div class="container-center">
+    <div class="contain">
+
+        <form [formGroup]="login" (ngSubmit)="Enviar(login.value) ">
+
+            <h2 id="log">GymAPP</h2>
+            <mat-label>Gmail</mat-label>
+            <input type="email" formControlName="email" required maxlength="30">
+            <mat-label>Password</mat-label>
+            <input type="password" formControlName="password" required maxlength="30">
+
+            <button class="btn1" mat-raised-button [disabled]="login.invalid">Acceder</button>
+            <button class="btn2" mat-raised-button (click)="onClick()">Google</button>
+
+        </form>
+
+    </div>
+</div>

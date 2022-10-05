@@ -1,0 +1,40 @@
+.text-btn {
+    color: rgb(0, 0, 0);
+    font-size: small;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-btn:hover {
+    color: rgb(255, 255, 255);
+    font-size: small;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#b{
+    top: 15px;
+    right: 10px;
+    position: absolute;
+    align-items: flex-end;
+
+    height: 30px;
+    font-size: smaller;
+    color: black;
+    background-color: #ffffff;
+
+    
+}
+
+#b:hover {
+    top: 15px;
+    right: 10px;
+    position: absolute;
+    align-items: flex-end;
+
+    height: 30px;
+    font-size: smaller;
+    background-color: #000000;
+
+
+}

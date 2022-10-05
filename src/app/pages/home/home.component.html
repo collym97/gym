@@ -1,0 +1,37 @@
+<app-boton></app-boton>
+<div>
+    <h3 class="title">Clientes</h3>
+    <input type="text" [(ngModel)]="search" class="form-control" placeholder="Buscar cliente">
+
+</div>
+<br>
+<div class="container-center">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Plan </th>
+                <th scope="col">Action </th>
+
+            </tr>
+        </thead>
+        <tbody *ngFor="let i of model | filter:search ">
+            <tr>
+                <th scope="row">{{i.firstname}}</th>
+                <td> {{i.lastname}}</td>
+                <td>{{i.phone}}</td>
+                <td>{{i.plan}}</td>
+                <td><button class="btn btn-danger" (click)="onClickdelete(i)">X</button>
+                </td>
+
+
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+</div>
