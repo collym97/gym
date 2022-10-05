@@ -16,8 +16,8 @@ export class LoginComponent implements OnInit {
 
   constructor(private fireauth: AuthService, private router: Router)  {
     this.login = new FormGroup({
-    correo: new FormControl('',[Validators.email,Validators.required,Validators.minLength(3)]),
-      password: new FormControl('', [Validators.required, Validators.minLength(3)])
+    correo: new FormControl('',[Validators.required]),
+      password: new FormControl('', [Validators.required])
     
   })
     

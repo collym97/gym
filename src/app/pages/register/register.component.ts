@@ -15,8 +15,8 @@ img = '/assets/logo.gif';
 
   constructor(private fireauth: AuthService, private router: Router)  {
     this.register = new FormGroup({
-      email: new FormControl('',[Validators.required,Validators.email,Validators.maxLength(30),Validators.min(5)]),
-      password: new FormControl('', [Validators.required, Validators.maxLength(30),Validators.min(5),Validators.requiredTrue])
+      email: new FormControl('',[Validators.required]),
+      password: new FormControl('', [Validators.required ])
     
   })
     
